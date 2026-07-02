@@ -793,7 +793,7 @@ impl<T: 'static + Send + Sync, D: 'static + Send + Sync> Picker<T, D> {
                         // graphemes but treating them as char indices. The reason that
                         // this is correct is that nucleo will only ever consider the first char
                         // of a grapheme (and discard the rest of the grapheme) so the indices
-                        // returned by nucleo are essentially grapheme indecies
+                        // returned by nucleo are essentially grapheme indices
                         for grapheme in span.content.graphemes(true) {
                             let style = if grapheme_idx == next_highlight_idx {
                                 next_highlight_idx = indices.next().unwrap_or(u32::MAX);

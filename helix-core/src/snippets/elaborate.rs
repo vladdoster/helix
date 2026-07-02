@@ -277,7 +277,7 @@ impl PartialEq for Transform {
     fn eq(&self, other: &Self) -> bool {
         self.replacement == other.replacement
             && self.global == other.global
-            // doens't compare m and i setting but close enough
+            // doesn't compare m and i setting but close enough
             && self.regex_str == other.regex_str
     }
 }

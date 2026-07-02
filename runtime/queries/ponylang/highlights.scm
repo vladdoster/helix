@@ -76,7 +76,7 @@
 [
   "as"
   "is"
-  "isnt"
+  "isn't"
   "not"
   "and"
   "or"

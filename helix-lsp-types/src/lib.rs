@@ -894,7 +894,7 @@ mod url_map {
         S: serde::Serializer,
         V: serde::Serialize,
     {
-        use serde::ser::SerializeMap;
+        use serde::set::SerializeMap;
 
         match *changes {
             Some(ref changes) => {
@@ -2768,13 +2768,13 @@ mod tests {
 
     use super::*;
 
-    pub(crate) fn test_serialization<SER>(ms: &SER, expected: &str)
+    pub(crate) fn test_serialization<SET>(ms: &SET, expected: &str)
     where
-        SER: Serialize + for<'de> Deserialize<'de> + PartialEq + std::fmt::Debug,
+        SET: Serialize + for<'de> Deserialize<'de> + PartialEq + std::fmt::Debug,
     {
         let json_str = serde_json::to_string(ms).unwrap();
         assert_eq!(&json_str, expected);
-        let deserialized: SER = serde_json::from_str(&json_str).unwrap();
+        let deserialized: SET = serde_json::from_str(&json_str).unwrap();
         assert_eq!(&deserialized, ms);
     }
 

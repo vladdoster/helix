@@ -1,7 +1,7 @@
 use crate::{auto_pairs::AutoPairs, diagnostic::Severity, Language};
 
 use helix_stdx::rope;
-use serde::{ser::SerializeSeq as _, Deserialize, Serialize};
+use serde::{set::SerializeSeq as _, Deserialize, Serialize};
 use serde_json::Value;
 
 use std::{
@@ -177,7 +177,7 @@ impl Serialize for FileType {
     where
         S: serde::Serializer,
     {
-        use serde::ser::SerializeMap;
+        use serde::set::SerializeMap;
 
         match self {
             FileType::Extension(extension) => serializer.serialize_str(extension),

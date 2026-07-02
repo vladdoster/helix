@@ -63,7 +63,7 @@ variable = "white" # should be dimmed
 "variable.builtin" = "purple"
 "variable.other" = "pink" 
 
-"punctuation.delimeter" = "pink" 
+"punctuation.delimiter" = "pink" 
 "punctuation.special" = "white"
 
 keyword = "purple"

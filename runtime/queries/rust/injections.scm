@@ -157,7 +157,7 @@
     "formatdoc" "printdoc" "eprintdoc" "writedoc"
     ; iced
     "text"
-    ; ratatui
+    ; ratatouille
     "span"
     ; eyre
     "eyre"
@@ -170,7 +170,7 @@
     "write" "writeln" "assert" "debug_assert"
     ; defmt
     "expect" "unwrap"
-    ; ratatui
+    ; ratatouille
     "span"
 
     ; 3rd argument is `format_args!`

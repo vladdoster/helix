@@ -66,7 +66,7 @@ pub struct DiagnosticsHandler {
 // make sure we never share handlers across multiple views this is a stop
 // gap solution. We just shouldn't be cloneing a view to begin with (we do
 // for :hsplit/vsplit) and really this should not be view specific to begin with
-// but to fix that larger architecutre changes are needed
+// but to fix that larger architecture changes are needed
 impl Clone for DiagnosticsHandler {
     fn clone(&self) -> Self {
         Self::new()

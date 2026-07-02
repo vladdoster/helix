@@ -419,7 +419,7 @@ mod test {
     fn test_textobject_paragraph_inside_single() {
         let tests = [
             ("#[|]#", "#[|]#"),
-            ("firs#[t|]#\n\nparagraph\n\n", "#[first\n|]#\nparagraph\n\n"),
+            ("first#[t|]#\n\nparagraph\n\n", "#[first\n|]#\nparagraph\n\n"),
             (
                 "second\n\npa#[r|]#agraph\n\n",
                 "second\n\n#[paragraph\n|]#\n",
@@ -473,7 +473,7 @@ mod test {
     fn test_textobject_paragraph_around_single() {
         let tests = [
             ("#[|]#", "#[|]#"),
-            ("firs#[t|]#\n\nparagraph\n\n", "#[first\n\n|]#paragraph\n\n"),
+            ("first#[t|]#\n\nparagraph\n\n", "#[first\n\n|]#paragraph\n\n"),
             (
                 "second\n\npa#[r|]#agraph\n\n",
                 "second\n\n#[paragraph\n\n|]#",

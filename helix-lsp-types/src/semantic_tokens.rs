@@ -1,6 +1,6 @@
 use std::borrow::Cow;
 
-use serde::ser::SerializeSeq;
+use serde::set::SerializeSeq;
 use serde::{Deserialize, Serialize};
 
 use crate::{

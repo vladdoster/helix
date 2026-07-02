@@ -286,7 +286,7 @@ impl<'a> TextRenderer<'a> {
             return false;
         }
         row -= self.offset.row as u16;
-        // TODO is it correct to apply the whitspace style to all unicode white spaces?
+        // TODO is it correct to apply the whitespace style to all unicode white spaces?
         if grapheme.is_whitespace() {
             style = style.patch(self.whitespace_style);
         }
@@ -391,11 +391,11 @@ impl<'a> TextRenderer<'a> {
         width
     }
 
-    pub fn column_in_bounds(&self, colum: usize, width: usize) -> bool {
-        self.offset.col <= colum && colum + width <= self.offset.col + self.viewport.width as usize
+    pub fn column_in_bounds(&self, column: usize, width: usize) -> bool {
+        self.offset.col <= column && column + width <= self.offset.col + self.viewport.width as usize
     }
 
-    /// Overlay indentation guides ontop of a rendered line
+    /// Overlay indentation guides on top of a rendered line
     /// The indentation level is computed in `draw_lines`.
     /// Therefore this function must always be called afterwards.
     pub fn draw_indent_guides(&mut self, indent_level: usize, mut row: u16) {

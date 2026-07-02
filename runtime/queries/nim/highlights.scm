@@ -341,7 +341,7 @@
 
 ;; Built-in constants
 ((identifier) @constant.builtin
-  (#match? @constant.builtin "^(NaN|Inf|NegInf|isMainModule|appType|CompileDate|CompileTime|cpuEndian|hostOS|hostCPU|NimVersion|NimMajor|NimMinor|NimPatch|nimvm|QuitSuccess|QuitFailure)$"))
+  (#match? @constant.builtin "^(NaN|Inf|NegInf|isMainModule|appType|CompileDate|compile time|cpuEndian|hostOS|hostCPU|NimVersion|NimMajor|NimMinor|NimPatch|nimvm|QuitSuccess|QuitFailure)$"))
 
 ;; Built-in boolean constants
 ((identifier) @constant.builtin.boolean

@@ -1484,7 +1484,7 @@ void set_curbuf(buf_T *buf, int action)
   set_bufref(&prevbufref, prevbuf);
   set_bufref(&newbufref, buf);
 
-  // Autocommands may delete the curren buffer and/or the buffer we wan to go
+  // Autocommands may delete the current buffer and/or the buffer we wan to go
   // to.  In those cases don't close the buffer.
   if (!apply_autocmds(EVENT_BUFLEAVE, NULL, NULL, false, curbuf)
       || (bufref_valid(&prevbufref) && bufref_valid(&newbufref)
@@ -1653,7 +1653,7 @@ static int top_file_num = 1;            ///< highest file number
 
 /// Initialize b:changedtick and changedtick_val attribute
 ///
-/// @param[out]  buf  Buffer to intialize for.
+/// @param[out]  buf  Buffer to initialize for.
 static inline void buf_init_changedtick(buf_T *const buf)
   FUNC_ATTR_ALWAYS_INLINE FUNC_ATTR_NONNULL_ALL
 {

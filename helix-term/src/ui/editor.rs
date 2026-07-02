@@ -631,7 +631,7 @@ impl EditorView {
             }
         }
 
-        OverlayHighlights::Heterogenous { highlights: spans }
+        OverlayHighlights::Heterogeneous { highlights: spans }
     }
 
     /// Render brace match, etc (meant for the focused view only)

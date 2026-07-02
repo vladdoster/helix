@@ -34,8 +34,8 @@ use std::{borrow::Cow, iter, slice};
 /// tuples, followed by example text with "[" and "]" symbols
 /// representing the anchor and head positions:
 ///
-/// - (0, 3): `[Som]e text`.
-/// - (3, 0): `]Som[e text`.
+/// - (0, 3): `[Some]e text`.
+/// - (3, 0): `]Some[e text`.
 /// - (2, 7): `So[me te]xt`.
 /// - (1, 1): `S[]ome text`.
 ///

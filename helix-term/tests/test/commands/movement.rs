@@ -880,7 +880,7 @@ async fn match_bracket() -> anyhow::Result<()> {
                 }
             "##},
         ),
-        // gracefully handle multiple sibling brackets (usally for errors/incomplete syntax trees)
+        // gracefully handle multiple sibling brackets (usually for errors/incomplete syntax trees)
         // in the past we selected the first > instead of the second > here
         (
             indoc! {r##"
@@ -915,7 +915,7 @@ async fn match_bracket() -> anyhow::Result<()> {
 
     let python_tests = vec![
         // python quotes have a slightly more complex syntax tree
-        // that triggerd a bug in an old implementation so we test
+        // that triggered a bug in an old implementation so we test
         // them here
         (
             indoc! {r##"

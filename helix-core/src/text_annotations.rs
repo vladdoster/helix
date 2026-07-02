@@ -237,7 +237,7 @@ fn reset_pos<A, M>(layers: &[Layer<A, M>], pos: usize, get_pos: impl Fn(&A) -> u
 /// some types like `Cell` make all their arguments invariant. This is important for soundness
 /// normally for the same reasons that `&'a mut T` is invariant over `T`
 /// (see <https://doc.rust-lang.org/nomicon/subtyping.html>). However for `&'a mut` (`dyn Foo + 'b`)
-/// there is a specical rule in the language to make `'b` covariant (otherwise trait objects would be
+/// there is a special rule in the language to make `'b` covariant (otherwise trait objects would be
 /// super annoying to use). See  <https://users.rust-lang.org/t/solved-variance-of-dyn-trait-a> for
 /// why this is sound. Sadly that rule doesn't apply to `Cell<Box<(dyn Foo + 'a)>`
 /// (or other invariant types like `UnsafeCell` or `*mut (dyn Foo + 'a)`).
@@ -245,7 +245,7 @@ fn reset_pos<A, M>(layers: &[Layer<A, M>], pos: usize, get_pos: impl Fn(&A) -> u
 /// We sidestep the problem by using `NonNull` which is covariant. In the
 /// special case of trait objects this is sound (easily checked by adding a
 /// `PhantomData<&'a mut Foo + 'a)>` field). We don't need an explicit `Cell`
-/// type here because we never hand out any refereces to the trait objects. That
+/// type here because we never hand out any references to the trait objects. That
 /// means any reference to the pointer can create a valid multable reference
 /// that is covariant over `'a` (or in other words it's a raw pointer, as long as
 /// we don't hand out references we are free to do whatever we want).
@@ -312,7 +312,7 @@ impl<'a> TextAnnotations<'a> {
             }
         }
 
-        OverlayHighlights::Heterogenous { highlights }
+        OverlayHighlights::Heterogeneous { highlights }
     }
 
     /// Add new inline annotations.

@@ -24,7 +24,7 @@
 ] @function)
 
 (global_unit_generator) @variable.builtin
-(hexidecimal) @constant.numeric
+(hexadecimal) @constant.numeric
 (int) @constant.numeric.integer
 (keyword) @keyword
 (line_comment) @comment.line

@@ -1,6 +1,6 @@
 [
   (call_expression)
-  (dictionnary)
+  (dictionary)
   (if_statement)
   (index_expression)
   (list)

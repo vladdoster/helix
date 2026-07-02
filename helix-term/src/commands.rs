@@ -7112,7 +7112,7 @@ fn jump_to_word(cx: &mut Context, behaviour: Movement) {
         let mut changed = false;
         while cursor_fwd.head < end {
             cursor_fwd = movement::move_next_word_end(text, cursor_fwd, 1);
-            // The cursor is on a word that is atleast two graphemes long and
+            // The cursor is on a word that is at least two graphemes long and
             // madeup of word characters. The latter condition is needed because
             // move_next_word_end simply treats a sequence of characters from
             // the same char class as a word so `=<` would also count as a word.
@@ -7140,7 +7140,7 @@ fn jump_to_word(cx: &mut Context, behaviour: Movement) {
         }
         while cursor_rev.head > start {
             cursor_rev = movement::move_prev_word_start(text, cursor_rev, 1);
-            // The cursor is on a word that is atleast two graphemes long and
+            // The cursor is on a word that is at least two graphemes long and
             // madeup of word characters. The latter condition is needed because
             // move_prev_word_start simply treats a sequence of characters from
             // the same char class as a word so `=<` would also count as a word.

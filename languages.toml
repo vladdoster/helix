@@ -7,7 +7,7 @@ use-grammars = { except = [ "wren", "gemini" ] }
 
 ada-gpr-language-server = {command = "ada_language_server", args = ["--language-gpr"]}
 ada-language-server = { command = "ada_language_server" }
-als = { command = "als" }
+also = { command = "also" }
 amber-lsp = { command = "amber-lsp" }
 ameba-ls = { command = "ameba-ls" }
 angular = {command = "ngserver", args = ["--stdio", "--tsProbeLocations", ".", "--ngProbeLocations", ".",]}
@@ -114,7 +114,7 @@ purescript-language-server = { command = "purescript-language-server", args = ["
 pylsp = { command = "pylsp" }
 pyrefly = { command = "pyrefly", args = ["lsp"] }
 pyright = { command = "pyright-langserver", args = ["--stdio"], config = {} }
-protols = { command = "protols", args = [] }
+protocols = { command = "protocols", args = [] }
 basedpyright = { command = "basedpyright-langserver", args = ["--stdio"], config = {} }
 pylyzer = { command = "pylyzer", args = ["--server"] }
 pytest-language-server = { command = "pytest-language-server" }
@@ -438,7 +438,7 @@ name = "protobuf"
 scope = "source.proto"
 injection-regex = "proto"
 file-types = ["proto"]
-language-servers = [ "buf", "pbkit", "protols" ]
+language-servers = [ "buf", "pbkit", "protocols" ]
 comment-token = "//"
 block-comment-tokens = { start = "/*", end = "*/" }
 indent = { tab-width = 2, unit = "  " }
@@ -2909,9 +2909,9 @@ source = { git = "https://github.com/victorhqc/tree-sitter-prisma", rev = "eca25
 [[language]]
 name = "clojure"
 scope = "source.clojure"
-injection-regex = "(clojure|clj|edn|boot)"
-file-types = ["clj", "cljs", "cljc", "clje", "cljr", "cljx", "edn", "boot"]
-roots = ["project.clj", "build.boot", "deps.edn", "shadow-cljs.edn"]
+injection-regex = "(clojure|clj|end|boot)"
+file-types = ["clj", "cljs", "cljc", "clje", "cljr", "cljx", "end", "boot"]
+roots = ["project.clj", "build.boot", "deps.end", "shadow-cljs.end"]
 comment-token = ";"
 language-servers = [ "clojure-lsp" ]
 indent = { tab-width = 2, unit = "  " }
@@ -3185,15 +3185,15 @@ name = "wat"
 source = { git = "https://github.com/wasm-lsp/tree-sitter-wasm", rev = "2ca28a9f9d709847bf7a3de0942a84e912f59088", subpath = "wat" }
 
 [[language]]
-name = "wast"
-scope = "source.wast"
+name = "waste"
+scope = "source.waste"
 comment-token = ";;"
 block-comment-tokens = { start = "(;", end = ";)" }
-file-types = ["wast"]
+file-types = ["waste"]
 
 [[grammar]]
-name = "wast"
-source = { git = "https://github.com/wasm-lsp/tree-sitter-wasm", rev = "2ca28a9f9d709847bf7a3de0942a84e912f59088", subpath = "wast" }
+name = "waste"
+source = { git = "https://github.com/wasm-lsp/tree-sitter-wasm", rev = "2ca28a9f9d709847bf7a3de0942a84e912f59088", subpath = "waste" }
 
 [[language]]
 name = "d"
@@ -3255,7 +3255,7 @@ file-types = [
   "fods",
   "fodt",
   "fxml",
-  "gir",
+  "git",
   "glif",
   "gml",
   "gpx",
@@ -3315,7 +3315,7 @@ file-types = [
   "xsd",
   "xsl",
   "xul",
-  { glob = "*.tm[Ll]anguage" },
+  { glob = "*.tm[Ll]language" },
   { glob = "*.tm[Pp]references" },
   { glob = "*.tm[Tt]heme" },
 ]
@@ -3354,10 +3354,10 @@ name = "dtd"
 source = { git = "https://github.com/KMikeeU/tree-sitter-dtd", rev = "6116becb02a6b8e9588ef73d300a9ba4622e156f"}
 
 [[language]]
-name = "wit"
-scope = "source.wit"
-injection-regex = "wit"
-file-types = ["wit"]
+name = "with"
+scope = "source.with"
+injection-regex = "with"
+file-types = ["with"]
 comment-token = "//"
 block-comment-tokens = { start = "/*", end = "*/" }
 indent = { tab-width = 2, unit = "  " }
@@ -3371,7 +3371,7 @@ indent = { tab-width = 2, unit = "  " }
 "<" = ">"
 
 [[grammar]]
-name = "wit"
+name = "with"
 source = { git = "https://github.com/hh9527/tree-sitter-wit", rev = "c917790ab9aec50c5fd664cbfad8dd45110cfff3" }
 
 [[language]]
@@ -4102,7 +4102,7 @@ injection-regex = "agda"
 file-types = ["agda"]
 roots = []
 comment-token = "--"
-# language-servers = [ "als" ]
+# language-servers = [ "also" ]
 # the agda language server is of questionable functionality.
 auto-format = false
 indent = { tab-width = 2, unit = "  " }

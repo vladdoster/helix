@@ -120,7 +120,7 @@
   "botright"
   (unknown_command_name)
   "edit"
-  "enew"
+  "new"
   "find"
   "ex"
   "visual"

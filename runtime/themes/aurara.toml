@@ -195,7 +195,7 @@
 
 'type' = { fg = "blue-aqua" } # Variable type, like integer or string, including program defined classes, structs etc..
   # NOTE: sometimes there's class / end, which looks odd not bolded like other control/end statements
-  # doesn't seperate declaration, parameters, instantiation (though there is constructor), so it's difficult to italicize
+  # doesn't separate declaration, parameters, instantiation (though there is constructor), so it's difficult to italicize
 'type.builtin' = { fg = "green-sea", modifiers = ["italic"] } # Primitive types of the language (string, int, float).
 'type.enum.variant' = { fg = "green-sea" } # A variant of an enum.
   # vs match constant color
@@ -276,7 +276,7 @@
 'keyword.operator' = { fg = "purple", modifiers = ["bold"] } # 'or', 'and', 'in'.
   # TODO: doesn't look like it's working..??
 'keyword.directive' = { fg = "purple", modifiers = ["italic"] } # Preprocessor directives (#if, #include in C).
-'keyword.function' = { fg = "purple", modifiers = ["bold"] } # The keyword to define a funtion: 'def', 'fun', 'fn'.
+'keyword.function' = { fg = "purple", modifiers = ["bold"] } # The keyword to define a function: 'def', 'fun', 'fn'.
 'keyword.storage' = { fg = "purple" } # let and var in rust.. these should be more visible..
 'keyword.storage.modifier' = { fg = "purple-dimmer", modifiers = ["italic"] } # function and type modifiers/accessors: public/private, mut, dyn, ref, &, internal, readonly, const, etc.
   # these should be less visible
@@ -305,7 +305,7 @@
 
 'namespace' = { fg = "blue-green" } # * Namespace keyword in java, C#, etc.
   # namespace::function, namespace::class, package main, *types.Tuple
-  # requires a seperate color
+  # requires a separate color
   # TODO: this nasty blue-green accurately matches how i feel about namespace syntax..: *barf*.. pink-hotter is interesting... really changes things up!.. but i still prefer something similar to blue for logical reasoning
   # for a long time i was using italics here, but then discovered it was part of its ugliness! now it's actually tolerable
   
@@ -380,16 +380,16 @@ markup = "purple-pleasant-dimmer" # fallback
 
 
 [palette] # Define your custom colors here.
-# NOTE: there are 16 colors in the palette by default, these will override any that have the same name. TODO: in order to make it most compatible and future-proof, should really use thsoe color names, even if it's not actually that color
+# NOTE: there are 16 colors in the palette by default, these will override any that have the same name. TODO: in order to make it most compatible and future-proof, should really use those color names, even if it's not actually that color
 
 # noctis
 # dark-green = "#00262a" # backgrounds
 # mid-green = "#073a40" # highlights
 # autocomp-green = "#0d6772" # lighter than mid-green
   # these three were used for backgrounds
-light-green = "#48e9a7" # a nice sea green, bright neon when bolded, like the displays of deep sea instruments, was "green", re-used for text under the cursor
+light-green = "#48e9a7" # a nice sea green, bright neon when bolded, like the displays of deep sea instruments, was "green", reused for text under the cursor
 
-pink-salmon = "#df769b" # re-used for return, was "pink", it's perfect! :D use sparingly as i really don't like themes with lots of red in it, only returns and maybe exceptions
+pink-salmon = "#df769b" # reused for return, was "pink", it's perfect! :D use sparingly as i really don't like themes with lots of red in it, only returns and maybe exceptions
 gold = "#ffd800" # a nice, shiny bolded gold used for punctuation, was "yellow", ..maybe was also used for it's variable text..? unfortunately, it's very bright. used for matching fuzzy search, and other things that should really stick out, or otherwise highlighting selected text
 purple-darker = "#6f60ea" # this purple is slightly darker than aura's, used for cascading keywords, but seems to match vs-code's aura better??
 white-sea-tinged = "#b1cace" # has a tinge of green in it.., pleasant tho
@@ -413,12 +413,12 @@ blue-aqua = "#47ace8" # currently used for types, a pretty standard blue for cla
 green-aqua = "#54c59f" # used for constants/literals, not the prettiest, but it fits the aqua sea feelin' of the overall theme.. maybe can try bogster's green
 orange = "#c7a06f" # used for functions, but feels too boring.. :(
 orange-desaturated = "#C7B693"
-pink = "#c17ac8" # great, comfy pink for pop-up-menu ui text, TODO: shuold be second main text color, but using it for punctuation t the moment..
+pink = "#c17ac8" # great, comfy pink for pop-up-menu ui text, TODO: should be second main text color, but using it for punctuation t the moment..
 # pink-lighter = "#cb90d1" # 1/7th shade lighter (whiter)
 # white-stone-pink = "#BEA7C1" # somewhere between white-stone and pink; meh... pink is just more clearly visible than the colors between..
 # pink-brighter = "#DE95E5"
 pink-dimmer = "#B56EBC" # slightly desaturated, used for fields/methods and elixir's @thing
-# fuschia = "#A955B2" # TODO: an interesting one to use..
+# fuchsia = "#A955B2" # TODO: an interesting one to use..
 # pink-even-dimmer = "#8C5C90" # used for pop-up menus, similar to pink with dim modifier.. too dim, not even pink anymore! more like magenta.. but very comfy to read!
 pink-hot = "#cc6cd6" # +25% saturation, nice 'n slight! for delimiters via coolers.co gradient
 pink-hotter = "#d85ee3" # +50% saturation, for "special" symbols
@@ -437,7 +437,7 @@ bg = "#15141b" # was "black", quite dark.. high-contrast
 # bg = "#2d2b38" # raisin black, was accent30. much much lighter, tougher to see on transparent backgrounds
 
 purple-pleasant = "#a394f0" # great comfy purp for ui, should be main color, used for text (in .txt files) and strings and ui, was accent17 (with 33 alpha) as TODO: secondary selection and accent18 (with 00 alpha)
-  # NOTE: still use this with dim modifer to make a color even dimmer than purple-pleasant-dimmer
+  # NOTE: still use this with dim modifier to make a color even dimmer than purple-pleasant-dimmer
 purple-pleasant-dimmer = "#9889E4" # switch to using this as main text.. along with pink-dimmer
 
 # aura colors shared between variations
@@ -474,7 +474,7 @@ berry-desaturated = "#886C9C" # originally used for comments, but didn't quite w
 # orange-pumpkin = "#ff9e64" # orange from tokyonight, too bright but really orange! looks okay with dim modifier..
 # orange-tokyonight = "#e0af68" # yellow from tokyonight, similar to orange from noctis
 
-# TODO: "shades of purple" theme has an actual orangey orange, a nice fuschia/deep purple, a good red, and a cyan that isn't too bright
+# TODO: "shades of purple" theme has an actual orangey orange, a nice fuchsia/deep purple, a good red, and a cyan that isn't too bright
 
 # TODO: try checking out noctis variants minimus and uva
 

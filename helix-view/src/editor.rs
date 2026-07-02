@@ -56,7 +56,7 @@ use helix_dap::{self as dap, registry::DebugAdapterId};
 use helix_lsp::lsp;
 use helix_stdx::path::canonicalize;
 
-use serde::{ser::SerializeMap, Deserialize, Deserializer, Serialize, Serializer};
+use serde::{set::SerializeMap, Deserialize, Deserializer, Serialize, Serializer};
 
 use arc_swap::{
     access::{DynAccess, DynGuard},
@@ -82,7 +82,7 @@ where
         duration
             .as_millis()
             .try_into()
-            .map_err(|_| serde::ser::Error::custom("duration value overflowed u64"))?,
+            .map_err(|_| serde::set::Error::custom("duration value overflowed u64"))?,
     )
 }
 

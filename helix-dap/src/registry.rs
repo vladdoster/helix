@@ -6,9 +6,9 @@ use slotmap::SlotMap;
 use std::fmt;
 use tokio_stream::wrappers::UnboundedReceiverStream;
 
-/// The resgistry is a struct that manages and owns multiple debugger clients
+/// The registry is a struct that manages and owns multiple debugger clients
 /// This holds the responsibility of managing the lifecycle of each client
-/// plus showing the heirarcihical nature betweeen them
+/// plus showing the heirarcihical nature between them
 pub struct Registry {
     inner: SlotMap<DebugAdapterId, Client>,
     /// The active debugger client

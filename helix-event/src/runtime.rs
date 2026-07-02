@@ -3,7 +3,7 @@
 //! it runs multiple helix applications in parallel. Making the globals
 //! thread-local does not work because a applications can/does have multiple
 //! runtime threads. Instead this crate implements a similar notion to a thread
-//! local but instead of being local to a single thread, the statics are local to
+//! local but instead of being local to a single thread, the statistics are local to
 //! a single tokio-runtime. The implementation requires locking so it's not exactly efficient.
 //!
 //! Therefore this function is only enabled during integration tests and behaves like

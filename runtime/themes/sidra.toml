@@ -117,7 +117,7 @@ namespace                     = "#7095bf"  # Steel blue
 "punctuation"                = "#FFFFFF"  # White
 "punctuation.delimiter"      = "#F3F2CC"  # White (delimiter punctuation)
 "punctuation.bracket"        = "#FFFFFF"  # Yellow
-"punctuation.special"        = "#ffd700"  # Yello
+"punctuation.special"        = "#ffd700"  # Yellow
 operator                     = "#F3F2CC"  # Dusty brown (used to be "muddy")
 special                      = "#c90076"  # Pink Color
 

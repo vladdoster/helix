@@ -226,7 +226,7 @@
 | prisma | ✓ | ✓ |  |  |  | `prisma-language-server` |
 | prolog | ✓ |  | ✓ |  |  | `swipl` |
 | properties | ✓ | ✓ |  |  |  |  |
-| protobuf | ✓ | ✓ | ✓ | ✓ |  | `buf`, `pb`, `protols` |
+| protobuf | ✓ | ✓ | ✓ | ✓ |  | `buf`, `pb`, `protocols` |
 | proverif | ✓ |  |  |  |  |  |
 | prql | ✓ |  |  |  |  |  |
 | ptx | ✓ |  | ✓ |  |  |  |
@@ -317,14 +317,14 @@
 | vhs | ✓ |  |  |  |  |  |
 | vim | ✓ |  |  |  | ✓ |  |
 | vue | ✓ | ✓ | ✓ |  |  | `vue-language-server` |
-| wast | ✓ |  |  |  |  |  |
+| waste | ✓ |  |  |  |  |  |
 | wat | ✓ |  |  |  |  | `wat_server` |
 | webc | ✓ |  |  |  |  |  |
 | werk | ✓ |  |  |  |  |  |
 | wesl | ✓ | ✓ |  |  |  |  |
 | wgsl | ✓ | ✓ | ✓ | ✓ | ✓ | `wgsl-analyzer` |
 | wikitext | ✓ |  |  |  |  | `wikitext-lsp` |
-| wit | ✓ |  | ✓ |  |  |  |
+| with | ✓ |  | ✓ |  |  |  |
 | woodpecker-ci | ✓ | ✓ | ✓ | ✓ | ✓ | `yaml-language-server` |
 | wren | ✓ | ✓ | ✓ |  |  |  |
 | xit | ✓ |  |  |  |  |  |

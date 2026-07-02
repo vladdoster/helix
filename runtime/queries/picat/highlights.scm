@@ -1,4 +1,4 @@
-; hightlights.scm
+; highlights.scm
 
 [
   "."

@@ -91,7 +91,7 @@ impl Layout {
         self
     }
 
-    /// Returns a layout wit the given margins on all sides.
+    /// Returns a layout with the given margins on all sides.
     pub const fn margin(mut self, margin: u16) -> Layout {
         self.margin = Margin::all(margin);
         self

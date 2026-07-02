@@ -432,7 +432,7 @@ impl Editor {
                                     "Terminated debugging session and disconnected debugger.",
                                 );
 
-                                // Go through all breakpoints and set verfified to false
+                                // Go through all breakpoints and set verified to false
                                 // this should update the UI to show the breakpoints are no longer connected
                                 for breakpoints in self.breakpoints.values_mut() {
                                     for breakpoint in breakpoints.iter_mut() {

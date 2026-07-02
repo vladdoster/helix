@@ -27,7 +27,7 @@ pub trait Decoration {
     /// spread a single document line across multiple visual lines.
     ///
     /// This function is called before text is rendered as any decorations should
-    /// never overlap the document text. That means that setting the forground color
+    /// never overlap the document text. That means that setting the foreground color
     /// here is (essentially) useless as the text color is overwritten by the
     /// rendered text. This _of course_ doesn't apply when rendering inside virtual lines
     /// below the line reserved by `LineAnnotation`s as no text will be rendered here.

@@ -355,7 +355,7 @@ impl fmt::Debug for Document {
 
 impl fmt::Debug for DocumentInlayHintsId {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        // Much more agreable to read when debugging
+        // Much more agreeable to read when debugging
         f.debug_struct("DocumentInlayHintsId")
             .field("lines", &(self.first_line..self.last_line))
             .finish()
@@ -1076,7 +1076,7 @@ impl Document {
                 ));
             }
 
-            // Assume it is a hardlink to prevent data loss if the metadata cant be read (e.g. on certain Windows configurations)
+            // Assume it is a hardlink to prevent data loss if the metadata can't be read (e.g. on certain Windows configurations)
             let is_hardlink = helix_stdx::faccess::hardlink_count(&write_path).unwrap_or(2) > 1;
             let is_symlink = match tokio::fs::symlink_metadata(&write_path).await {
                 Ok(meta) => meta.is_symlink(),
@@ -1989,7 +1989,7 @@ impl Document {
         self.diff_handle.as_ref()
     }
 
-    /// Intialize/updates the differ for this document with a new base.
+    /// Initialize/updates the differ for this document with a new base.
     pub fn set_diff_base(&mut self, diff_base: Vec<u8>) {
         if let Ok((diff_base, ..)) = from_reader(&mut diff_base.as_slice(), Some(self.encoding)) {
             if let Some(differ) = &self.diff_handle {

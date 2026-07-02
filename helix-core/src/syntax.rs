@@ -697,7 +697,7 @@ impl Syntax {
             }
         }
 
-        OverlayHighlights::Heterogenous { highlights }
+        OverlayHighlights::Heterogeneous { highlights }
     }
 }
 
@@ -794,7 +794,7 @@ pub enum OverlayHighlights {
     /// A collection of different highlights for given ranges.
     ///
     /// Note that the ranges **must be non-overlapping**.
-    Heterogenous {
+    Heterogeneous {
         highlights: Vec<(Highlight, ops::Range<usize>)>,
     },
 }
@@ -810,7 +810,7 @@ impl OverlayHighlights {
     fn is_empty(&self) -> bool {
         match self {
             Self::Homogeneous { ranges, .. } => ranges.is_empty(),
-            Self::Heterogenous { highlights } => highlights.is_empty(),
+            Self::Heterogeneous { highlights } => highlights.is_empty(),
         }
     }
 }
@@ -842,7 +842,7 @@ impl Overlay {
             OverlayHighlights::Homogeneous { highlight, ranges } => ranges
                 .get(self.idx)
                 .map(|range| (*highlight, range.clone())),
-            OverlayHighlights::Heterogenous { highlights } => highlights.get(self.idx).cloned(),
+            OverlayHighlights::Heterogeneous { highlights } => highlights.get(self.idx).cloned(),
         }
     }
 
@@ -851,7 +851,7 @@ impl Overlay {
             OverlayHighlights::Homogeneous { ranges, .. } => {
                 ranges.get(self.idx).map(|range| range.start)
             }
-            OverlayHighlights::Heterogenous { highlights } => highlights
+            OverlayHighlights::Heterogeneous { highlights } => highlights
                 .get(self.idx)
                 .map(|(_highlight, range)| range.start),
         }

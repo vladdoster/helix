@@ -5020,7 +5020,7 @@ Instead, please regenerate using generate-encoding-data.py
 $BVB(B
 $BVC(B
 $BVD(B
-$BVE(B
+$BE(B
 $BVF(B
 $BVG(B
 $BVH(B
@@ -5052,7 +5052,7 @@ Instead, please regenerate using generate-encoding-data.py
 $BVb(B
 $BVc(B
 $BVd(B
-$BVe(B
+$be(B
 $BVf(B
 $BVg(B
 $BVh(B
@@ -8028,7 +8028,7 @@ Instead, please regenerate using generate-encoding-data.py
 $BvB(B
 $BvC(B
 $BvD(B
-$BvE(B
+$be(B
 $BvF(B
 $BvG(B
 $BvH(B
@@ -8060,7 +8060,7 @@ Instead, please regenerate using generate-encoding-data.py
 $Bvb(B
 $Bvc(B
 $Bvd(B
-$Bve(B
+$Be(B
 $Bvf(B
 $Bvg(B
 $Bvh(B
